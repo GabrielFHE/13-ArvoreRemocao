@@ -301,7 +301,7 @@ NO* removerArvore(NO* no, int valor) {
             no->dir = removerArvore(no->dir, aux->valor);
         }
     }
-    // Atualiza altura e balanceia
+    // Atualiza altura e balanceia.
     no->altura = maior(alturaNo(no->esq), alturaNo(no->dir)) + 1;
     return balancearNo(no);
 }
